@@ -1,0 +1,248 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #d9d9d9;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    width: 100%;
+    position: relative;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar li {
+    float: left;
+}
+
+.headiing {
+    font-size: 5.5vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-left: 4vw;
+}
+
+.teext-box {
+    width: 92%;
+    margin-left: 4vw;
+    margin-bottom: 5vh;
+}
+
+.text {
+    font-size: 2.9vh;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.image {
+    position: absolute;
+    left: 0.7rem;
+    height: 2.4rem;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-title {
+    text-align: center;
+    margin-top: 6vh;
+    font-size: 4.9vh;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    gap: 150px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.7vh;
+}
+
+.form-left label, .form-right label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-left input,
+.form-right textarea {
+    background: #e4e4e4;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    width: 580px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-right textarea {
+    width: 620px;
+    height: 280px;
+    resize: none;
+}
+
+.apply-button {
+    margin-top: 10px;
+    background: #ecebeb;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.apply-button a{
+    color: black;
+}
+
+.apply-button:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.course-levels {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.box {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.level {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.beginner {
+    color: lightgreen;
+}
+
+.intermediate {
+    color: orange;
+}
+
+.high {
+    color: red;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #ccc;
+    color: grey;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 5vw;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-left, .form-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .form-left input,
+    .form-right textarea {
+        width: 100%;
+        max-width: 100%;
+        background: #e4e4e4;
+        padding: 1px;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .form-right textarea {
+        height: 250px;
+        resize: none;
+    }
+
+    .apply-button {
+        align-self: center;
+        background: #d3d3d3;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 20px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .apply-button:hover {
+        background: #c0c0c0;
+    }
+}

@@ -1,0 +1,135 @@
+body {
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #d9d9d9;
+    padding: 0rem;
+    margin: 0rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 2.6125rem;
+    position: relative;
+    width: 100%;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    text-align: center;
+    font-family: "Open Sans", "Arial",Verdana, Tahoma, sans-serif;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.image {
+    position: absolute;
+    left: 0.7rem;
+    height: 2.4rem;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+  
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+  
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 260px;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.left, .right {
+    flex: 1 1 500px;
+    max-width: 500px;
+}
+  
+.section {
+    margin-bottom: 30px;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: left; /* Make sure it's aligned left */
+}
+  
+ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+}
+  
+h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+  
+p {
+    margin: 10px 0;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+  
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .left, .right {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+}
+  
+  
